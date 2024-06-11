@@ -1,3 +1,5 @@
 asyncio
 aiohttp
 tqdm
+beautifulsoup4
+jupyterlab

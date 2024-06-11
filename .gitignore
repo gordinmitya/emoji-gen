@@ -1,5 +1,5 @@
-emojis/
-metadata.json
+data/*
+!data/download_metadata.sh
 
 .DS_Store
 

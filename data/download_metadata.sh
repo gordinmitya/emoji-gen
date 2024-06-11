@@ -1,0 +1,1 @@
+curl -L --compressed https://raw.githubusercontent.com/xsalazar/emoji-kitchen-backend/main/app/metadata.json -o kitchen-metadata.json

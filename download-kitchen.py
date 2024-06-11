@@ -5,8 +5,7 @@ import json
 from tqdm.asyncio import tqdm
 
 
-FOLDER = 'emojis'
-os.makedirs(FOLDER, exist_ok=True)
+FOLDER = 'data/kitchen/'
 
 
 async def download_emoji(session, semaphore, url, progress_bar):
@@ -23,9 +22,11 @@ async def download_emoji(session, semaphore, url, progress_bar):
 
 
 async def main():
+    os.makedirs(FOLDER, exist_ok=True)
     existing = os.listdir(FOLDER)
 
-    data = json.load(open('metadata.json'))
+    # check data/download-metadata.sh for the source of this file
+    data = json.load(open('data/kitchen-metadata.json'))
     urls = set()
     for dp in data['data'].values():
         for combinations in dp['combinations'].values():
