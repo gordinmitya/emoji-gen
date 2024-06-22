@@ -1,5 +1,7 @@
 data/*
-!data/download_metadata.sh
+!data/*.sh
+!data/*.md
+
 
 .DS_Store
 

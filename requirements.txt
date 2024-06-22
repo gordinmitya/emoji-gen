@@ -3,3 +3,4 @@ aiohttp
 tqdm
 beautifulsoup4
 jupyterlab
+Pillow
